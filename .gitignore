@@ -1,0 +1,7 @@
+bin
+obj
+build
+package
+build-tools/FAKE*
+.fake
+*.userprefs
