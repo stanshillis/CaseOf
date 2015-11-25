@@ -2,7 +2,7 @@ Micro library inspired by F# single case discirminated unions.
 
 Create primitive domain concepts in C# with one line.
 
-	class Age : CaseOf<int, Ae> {}
+	class Age : CaseOf<int, Age> {}
 
 Pass around instances worry free, they are immutable and implement value based equality.
 
@@ -14,7 +14,7 @@ Pass around instances worry free, they are immutable and implement value based e
 Implicit downcasting to wrapped typed.
 
 	int integerHisAge = hisAge;
-	int integerHerAGe = herAge.Value;
+	int integerHerAge = herAge.Value;
 
 	Assert.IsTrue(integerHisAge.Equals(integerHerAge));
 
