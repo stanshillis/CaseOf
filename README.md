@@ -20,7 +20,7 @@ Implicit downcasting to wrapped typed.
 
 Create Action<> or Func<> delegates that are descriptive.
 
-	class Username : CaseOf<string, Name> {}
+	class Username : CaseOf<string, Username> {}
 	class Email : CaseOf<string, Email> {}
 
 	Action<Username, Email> register = (name, email) => { /* .... */ }
